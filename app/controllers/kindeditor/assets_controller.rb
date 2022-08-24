@@ -1,6 +1,7 @@
 #coding: utf-8
 require "find"
 class Kindeditor::AssetsController < ApplicationController
+
   before_filter :verify_authenticity_token
   def create
     @imgFile, @dir = params[:imgFile], params[:dir]
